@@ -1,6 +1,6 @@
 {
   "name": "loopback-redis-cache",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Redis cache for loopback.io",
   "main": "rediscache.js",
   "scripts": {
@@ -22,8 +22,7 @@
     "redis",
     "cache"
   ],
-  "author": "Vassileios Katsaris",
-  "license": "MIT",
+  "author": "LUU Jérémy",
   "bugs": {
     "url": "https://github.com/MasterKirito29/loopback-redis-cache/issues"
   },
