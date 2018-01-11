@@ -31,6 +31,8 @@ module.exports = function(Model, options) {
                 var cachExpire = ctx.req.query.cache;
 
                 // set key name
+                console.log("ctx.req.query : " + ctx.req.query);
+                console.log("JSON.stringify(ctx.req.query) : " + JSON.stringify(ctx.req.query));
                 var cache_key = modelName+'_'+new Buffer(JSON.stringify(ctx.req.query)).toString('base64');
 
                 // search for cache
@@ -66,6 +68,8 @@ module.exports = function(Model, options) {
                 var cachExpire = ctx.req.query.cache;
                 
                 // set key name
+                console.log("ctx.req.query : " + ctx.req.query);
+                console.log("JSON.stringify(ctx.req.query) : " + JSON.stringify(ctx.req.query));
                 var cache_key = modelName+'_'+new Buffer(JSON.stringify(ctx.req.query)).toString('base64');
                 // search for cache
                 client.get(cache_key, function(err, val) {
